@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="css/bQueenStyle.css" />
+    <title>GetBQ</title>
+    <script src="./js/bQueenFunctions.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="brandName">
+          <h1>BurgerQueen</h1>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="index.html"> HOME </a></li>
+            <li><a href="about.html"> ABOUT </a></li>
+            <li class="current"><a href="orderBQ.html"> GET BQ </a></li>
+            <li><a href="orderHistory.html"> ORDERS </a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div id="choices">
+      <form class="saladChoice">
+        <h1>Pick Salad</h1>
+        <input
+          type="checkbox"
+          id="Salad1"
+          name="product"
+          value="50"
+          onclick="totalIt()"
+        />
+        <label> Add Onion </label><br />
+        <br />
+        <input
+          type="checkbox"
+          id="Salad2"
+          name="product"
+          value="50"
+          onclick="totalIt()"
+        />
+        <label> Add Tomato </label><br />
+        <br />
+        <input
+          type="checkbox"
+          id="Salad3"
+          name="product"
+          value="70"
+          onclick="totalIt()"
+        />
+        <label> Add Lettuce </label> <br />
+        <br />
+        <input
+          type="checkbox"
+          id="Salad4"
+          name="product"
+          value="90"
+          onclick="totalIt()"
+        />
+        <label> Add Avocado </label>
+      </form>
+
+      <form class="cheeseChoice">
+        <h1>Pick Cheese</h1>
+        <input
+          type="checkbox"
+          id="Cheese1"
+          name="product"
+          value="50"
+          onclick="totalIt()"
+        />
+        <label> Add Regular Cheese </label><br />
+        <br />
+        <input
+          type="checkbox"
+          id="Cheese2"
+          name="product"
+          value="50"
+          onclick="totalIt()"
+        />
+        <label> Add Mozzarella Cheese </label>
+      </form>
+
+      <form class="mayonnaiseChoice">
+        <h1>Pick Mayonnaise</h1>
+        <input
+          type="checkbox"
+          id="Mayonnaise1"
+          name="product"
+          value="50"
+          onclick="totalIt()"
+        />
+        <label> Add Regular Mayonnaise</label><br />
+        <br />
+        <input
+          type="checkbox"
+          id="Mayonnaise2"
+          name="product"
+          value="50"
+          onclick="totalIt()"
+        />
+        <label> Add Eggless Mayonnaise </label>
+      </form>
+
+      <form class="pattyChoice">
+        <h1>Pick Patty</h1>
+        <input
+          type="checkbox"
+          id="Patty1"
+          name="product"
+          value="100"
+          onclick="totalIt()"
+        />
+        <label> Add Aalootikki </label><br />
+        <br />
+        <input
+          type="checkbox"
+          id="Patty2"
+          name="product"
+          value="120"
+          onclick="totalIt()"
+        />
+        <label> Add Paneer Patty </label><br />
+        <br />
+        <input
+          type="checkbox"
+          id="Patty3"
+          name="product"
+          value="120"
+          onclick="totalIt()"
+        />
+        <label> Add Chicken Patty </label><br />
+        <br />
+      </form>
+      <div class="button-class">
+        <label class="totalCost"> Total: </label>
+        <input value="₹0" type="text" id="total" />
+      </div>
+    </div>
+  </body>
+</html>
+
+<footer>
+  <!-- <p>BurgerQueen, Copyright &copy; 2010.</p> -->
+</footer>
